@@ -285,26 +285,6 @@
       border: 1px dashed rgba(199, 226, 218, 0.45);
       font-size: 0.8rem;
       color: var(--accent-soft);
-      display: grid;
-      grid-template-columns: 74px minmax(0, 1fr);
-      gap: 0.7rem;
-      align-items: center;
-    }
-
-    .infographic-thumb {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      border-radius: 0.75rem;
-      overflow: hidden;
-      background: radial-gradient(circle at 30% 10%, #c7e2da, #1a3a33);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 600;
-      color: #0b1512;
     }
 
     section {
@@ -448,39 +428,6 @@
       background: var(--accent);
       margin-top: 0.3rem;
       box-shadow: 0 0 0 4px rgba(127, 178, 165, 0.25);
-    }
-
-    .cycle-diagram {
-      background: radial-gradient(circle at top, #1e463e, #0b1513 55%);
-      border-radius: 1.35rem;
-      border: 1px solid rgba(127, 178, 165, 0.35);
-      padding: 1rem 1.1rem 1.2rem;
-      font-size: 0.8rem;
-      color: var(--accent-soft);
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .cycle-diagram-visual {
-      margin-top: 0.4rem;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.4rem;
-    }
-
-    .cycle-node {
-      border-radius: 999px;
-      padding: 0.3rem 0.5rem;
-      border: 1px solid rgba(199, 226, 218, 0.65);
-      text-align: center;
-      font-size: 0.75rem;
-      background: rgba(9, 26, 22, 0.9);
-    }
-
-    .cycle-node.highlight {
-      border-color: var(--danger);
-      color: var(--danger);
     }
 
     .strategies-grid {
@@ -724,9 +671,9 @@
       <h2 class="hidden-heading">Home Page - Understanding Burnout</h2>
 
       <div class="hero">
-        <!-- Looped multimodal video background (replace src with your own) -->
+        <!-- Looped multimodal video background (external URL, no upload needed) -->
         <video autoplay muted loop playsinline>
-          <source src="media/fsu-campus-nature-loop.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/856192/856192-hd_1920_1080_24fps.mp4" type="video/mp4" />
         </video>
 
         <div class="hero-overlay">
@@ -801,16 +748,13 @@
               <span class="badge">Disconnection</span>
             </div>
 
-            <!-- Burnout symptom infographic placeholder (non-text mode) -->
+            <!-- Burnout symptom infographic image (external URL) -->
             <div class="infographic-card">
-              <div class="infographic-thumb">
-                Symptom<br />Map
-              </div>
-              <div>
-                <strong>Burnout symptom infographic</strong><br />
-                Visualize how burnout affects the body (headaches, sleep issues),
-                mind (concentration, motivation), and emotions (irritability, numbness).
-              </div>
+              <img
+                src="https://i.imgur.com/3ZQ3Z4I.png"
+                alt="Burnout symptom infographic showing effects on body, mind, and emotions."
+                style="width:100%; border-radius:0.9rem; display:block;"
+              />
             </div>
 
             <p style="font-size:0.8rem; margin-top:0.6rem; color:var(--muted);">
@@ -930,20 +874,13 @@
             </p>
           </div>
 
+          <!-- Burnout cycle diagram image (external URL) -->
           <div class="cycle-diagram">
-            <strong>Suggested multimodal addition: an illustrated cycle diagram.</strong>
-            <p>
-              Imagine this as a circular diagram where each step connects to the next, visually
-              reinforcing how easily burnout can become a loop.
-            </p>
-            <div class="cycle-diagram-visual">
-              <div class="cycle-node">High expectations</div>
-              <div class="cycle-node">Overworking</div>
-              <div class="cycle-node">Less rest</div>
-              <div class="cycle-node">Exhaustion</div>
-              <div class="cycle-node">Performance drops</div>
-              <div class="cycle-node highlight">Full burnout</div>
-            </div>
+            <img
+              src="https://i.imgur.com/XoU2qIR.png"
+              alt="Burnout cycle diagram showing high expectations leading to overwork, exhaustion, and full burnout."
+              style="width:100%; border-radius:0.9rem; display:block;"
+            />
           </div>
         </aside>
       </div>
@@ -1063,9 +1000,9 @@
           <div class="audio-block">
             <strong>Mindfulness audio clip</strong><br />
             A short guided practice to help you reset between study blocks.
-            <!-- Multimodal: audio (replace src with your own file) -->
+            <!-- Multimodal: audio (external URL, no upload needed) -->
             <audio controls>
-              <source src="media/mindfulness-5min.mp3" type="audio/mpeg" />
+              <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
@@ -1073,7 +1010,7 @@
           <div class="video-block" style="margin-top:1rem;">
             <strong>Pomodoro demonstration video</strong><br />
             See how to structure 25-minute focus sessions and 5-minute breaks.
-            <!-- Multimodal: embedded video (replace src with your own or an embed URL) -->
+            <!-- Multimodal: embedded video -->
             <iframe
               src="https://www.youtube.com/embed/2SjZugyxFh8"
               title="Pomodoro Study Technique Demo"
